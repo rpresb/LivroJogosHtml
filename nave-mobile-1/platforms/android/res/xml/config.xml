@@ -1,13 +1,21 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="io.cordova.hellocordova" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="br.com.presba.livrojogoshtml.nave" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <preference name="loglevel" value="DEBUG" />
-    <name>HelloCordova</name>
+    <feature name="File">
+        <param name="android-package" value="org.apache.cordova.file.FileUtils" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="Media">
+        <param name="android-package" value="org.apache.cordova.media.AudioHandler" />
+    </feature>
+    <name>Nave</name>
     <description>
-        A sample Apache Cordova application that responds to the deviceready event.
+        Jogo de Nave
     </description>
-    <author email="dev@cordova.apache.org" href="http://cordova.io">
-        Apache Cordova Team
+    <author email="rpresb@gmail.com" href="http://presba.com.br">
+        Rodrigo De Presbiteris
     </author>
     <content src="index.html" />
     <access origin="*" />
+    <preference name="Orientation" value="portrait" />
 </widget>
